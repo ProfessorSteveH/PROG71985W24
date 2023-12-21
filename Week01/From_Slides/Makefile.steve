@@ -1,0 +1,28 @@
+CXX = gcc 
+
+# the -g for debugging support
+CXXFLAGS = -Wall -g 
+LDFLAGS = 
+
+
+
+all: Source
+
+Source: Source.o
+	$(CXX)  Source.o -o Source $(LDFLAGS) 
+
+Source.o: Source.c
+	$(CXX) $(CXXFLAGS) -c Source.c ..\Project2\library.c
+
+clean:
+	rm Source *.o compile_commands.json strace_out PVS-Studio.log report.tasks scan.txt
+
+pvs: Source
+	compiledb -n make
+	pvs-studio-analyzer trace -- make
+	pvs-studio-analyzer analyze -l /source/repos/.config/PVS-Studio/PVS-Studio.lic -o ./PVS-Studio.log 
+	plog-converter -a GA:1,2 -t tasklist -o report.tasks ./PVS-Studio.log
+
+valgrind: Source
+	valgrind --tool=memcheck --leak-check=yes --track-origins=yes --show-reachable=yes --num-callers=20 --track-fds=yes ./Source
+
