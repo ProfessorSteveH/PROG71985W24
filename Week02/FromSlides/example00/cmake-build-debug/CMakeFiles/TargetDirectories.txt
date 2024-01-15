@@ -1,0 +1,3 @@
+/Users/steve/ownCloud/shared_with_college_acct/PROG71985/week02/example00/cmake-build-debug/CMakeFiles/example00.dir
+/Users/steve/ownCloud/shared_with_college_acct/PROG71985/week02/example00/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/steve/ownCloud/shared_with_college_acct/PROG71985/week02/example00/cmake-build-debug/CMakeFiles/rebuild_cache.dir
