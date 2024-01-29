@@ -1,0 +1,3 @@
+C:/Users/steve/school/PROG71985.W24/week04/In_Class/early/max_of/cmake-build-debug/CMakeFiles/max_of.dir
+C:/Users/steve/school/PROG71985.W24/week04/In_Class/early/max_of/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/steve/school/PROG71985.W24/week04/In_Class/early/max_of/cmake-build-debug/CMakeFiles/rebuild_cache.dir
