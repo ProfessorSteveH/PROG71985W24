@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.27)
-project(max_of C)
+project(maxof C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(max_of main.c
+add_executable(maxof main.c
         library.h
         library.c)
